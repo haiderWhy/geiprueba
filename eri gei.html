@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-compatible' content='IE=edge'>
+    <tittle>GEI</tittle>
+    <meta name='viewport' content='Width=device-width, initia-scale=1'>
+    <style>
+          body{
+            background-color: rgb(69, 178, 185);
+          }
+    </style>
+    <script>
+        function accionParaCuandoEllosDiganQueSi(){
+            alert('lo suponia'); 
+            
+        }
+
+        function accionParaCuandoEllosDiganQueNo(){
+            alert('no mientas')
+        }
+        function mueveElBoton(){
+            Width = windows.innerWidth; 
+            Heigth = windows.innerHeigth; 
+
+            newWidth = (Math.random() * Width);
+            newHeigth = (Math.random() * Heigth); 
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px"; 
+            document.getElementById('btnNo').style.top = newHeigth + "px"; 
+
+        }
+    </script>
+
+</head>
+<body>
+   <h3>¿eri gei?</h3>
+   <input type ="button" onclick ="accionParaCuandoEllosDiganQueSi()"id= "btnSi" value="SI"/>
+<input type ="button" onclick="accionParaCuandoEllosDiganQueNo()" id = "btnNo" value="NO"/>
+</body>
+</html>
